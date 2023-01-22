@@ -23,6 +23,5 @@ jobs:
     - name: Run mscript
       env:
         SUDO_PASSWORD: ${{ secrets.SUDO_PASSWORD }}
-      run: |
-        echo "$SUDO_PASSWORD" | sudo -S bash /home/primprum/mscript.sh
+      run: echo "$SUDO_PASSWORD" | sudo -S bash /home/primprum/mscript.sh
 
